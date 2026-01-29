@@ -1,24 +1,139 @@
-<html>
-  <head>
-    <title>Login</title>
-  </head>
-  <body>
-
-    <form onsubmit="returm login()">
-      <input id="u"placehlder=" Username "required>
-      <input id="p" type="password"placeholder="Password"required>
-      <button>Login</button>
-    </form>
-
-    <script>
-      function login() {
-        if(u.value=="admin"&&p.value=="123"{
-          aler("Login Berhasil");
-        } else {
-          alert("Login gagal");
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage Sederhana</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
         }
-        return false;
-      }
-    </script>
-  </body>
+
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Navbar */
+        header {
+            background-color: #2c3e50;
+            padding: 15px 30px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h1 {
+            color: #fff;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: #3498db;
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        .hero button {
+            padding: 10px 25px;
+            border: none;
+            background-color: #2c3e50;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .hero button:hover {
+            background-color: #1a252f;
+        }
+
+        /* Content */
+        .content {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .content h3 {
+            margin-bottom: 15px;
+        }
+
+        .content p {
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <h1>MyWebsite</h1>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Selamat Datang</h2>
+        <p>Ini adalah homepage website sederhana menggunakan HTML & CSS</p>
+        <button>Pelajari Lebih Lanjut</button>
+    </section>
+
+    <section class="content">
+        <h3>Tentang Website Ini</h3>
+        <p>
+            Website ini dibuat sebagai contoh dasar homepage.
+            Cocok untuk pemula yang sedang belajar HTML dan CSS.
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 MyWebsite. All rights reserved.</p>
+    </footer>
+
+</body>
 </html>
